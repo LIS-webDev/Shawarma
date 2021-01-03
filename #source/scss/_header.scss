@@ -1,0 +1,45 @@
+.header {
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	padding: 17px 0 0 0;
+	&__row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__logo {
+		flex: 1 1 264px;
+	}
+
+	&__menu {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 23px;
+		text-transform: uppercase;
+	}
+
+	&__hamburger {
+	}
+}
+
+.menu-list {
+	&__item {
+		display: inline-block;
+	}
+	& li {
+		margin: 0 70px 0 0;
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+
+.hamburger {
+	&__active {
+	}
+}
