@@ -12,17 +12,31 @@
 	<div class="container">
 		<div class="header__row">
 			<div class="header__logo">
-				<img src="/img/logo/logo-shawarma 1.png" alt="Shawarma" />
+				<picture>
+					<source
+						media="(max-width: 568px)"
+						srcset="img/logo/logo-shawarma-mobile.png"
+					/>
+					<img src="img/logo/logo-shawarma.png" alt="Shawarma" />
+				</picture>
 			</div>
-			<div class="header__menu menu-list">
-				<ul class="menu-list">
-					<li class="menu-list__item">Каталог</li>
-					<li class="menu-list__item">Заказать</li>
-					<li class="menu-list__item">Клиенты</li>
-					<li class="menu-list__item">О нас</li>
+			<nav class="header__menu">
+				<ul class="header__list">
+					<li class="header__item">
+						<a href="#" class="header__link">Каталог</a>
+					</li>
+					<li class="header__item">
+						<a href="#" class="header__link">Заказать</a>
+					</li>
+					<li class="header__item">
+						<a href="#" class="header__link">Клиенты</a>
+					</li>
+					<li class="header__item">
+						<a href="#" class="header__link">О нас</a>
+					</li>
 				</ul>
-			</div>
-			<div class="header__hamburger hamburger"></div>
+			</nav>
+			<div class="header__hamburger hamburger"><span></span></div>
 		</div>
 	</div>
 </header>
@@ -38,13 +52,13 @@
 								<button class="primary__button button">Проверить</button>
 							</div>
 							<div class="primary__img">
-								<img src="/img/person-shawarma 1.png" alt="Man" />
+								<img src="/img/person-shawarma.png" alt="Man" />
 							</div>
 						</div>
 					</div>
 				</div>
 			</main>
 		</div>
-		<script src="/js/main-dist.js   "></script>
+		<script src="/js/main.js"></script>
 	</body>
 </html>

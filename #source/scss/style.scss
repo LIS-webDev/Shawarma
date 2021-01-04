@@ -10,6 +10,10 @@
 @import "header";
 /* ------------------ */
 
+/* Hamburger */
+@import "hamburger";
+/* ------------------ */
+
 // Main
 body {
 	font-family: "Ubuntu";
@@ -21,12 +25,25 @@ body {
 	margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+	.container {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 568px) {
+	.container {
+		max-width: none;
+	}
+}
+
 .page {
 	padding: 100px 0 0 0;
 }
 
 // Primary
 .primary {
+	display: none;
 	&__row {
 		display: flex;
 		justify-content: center;
