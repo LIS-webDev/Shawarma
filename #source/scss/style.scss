@@ -14,9 +14,17 @@
 @import "hamburger";
 /* ------------------ */
 
+/* Usability */
+@import "ui";
+/* ------------------ */
+
 // Main
 body {
 	font-family: "Ubuntu";
+}
+
+.lock {
+	overflow: hidden;
 }
 
 .container {
@@ -31,9 +39,10 @@ body {
 	}
 }
 
-@media (max-width: 568px) {
+@media (max-width: 320px) {
 	.container {
 		max-width: none;
+		padding: 0 12px;
 	}
 }
 
@@ -43,15 +52,13 @@ body {
 
 // Primary
 .primary {
-	display: none;
 	&__row {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 	}
 
 	&__caption {
-		margin: 0 220px 0 0;
 	}
 
 	&__text {
@@ -59,27 +66,21 @@ body {
 		font-size: 36px;
 		line-height: 41px;
 		text-transform: uppercase;
-		margin: 0 0 40px 0;
 	}
 
-	&__button {
-		width: 203px;
-		height: 50px;
-		font-weight: 500;
-		font-size: 24px;
-		line-height: 28px;
-		color: #ffffff;
-		text-transform: uppercase;
-		background: #e63e00;
-		border-radius: 3px;
+	&__btn {
+		margin: 40px 0 0 0;
 	}
 
 	&__img {
 		flex: 1 1 390px;
 		text-align: right;
 	}
+	&__img_mobile {
+		display: none;
+	}
 }
 
-// Button
-.button {
-}
+/* Media */
+@import "media";
+/* ------------------ */

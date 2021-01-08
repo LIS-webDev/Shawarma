@@ -95,14 +95,15 @@ h1, h2, h3, h4, h5, h6 {
 .header__logo {
   flex: 1 1 264px;
 }
-.header__list li {
-  margin: 0 70px 0 0;
-}
-.header__list li:last-child {
-  margin: 0;
+.header__menu {
+  padding: 12px 0 0 0;
 }
 .header__item {
   display: inline-block;
+  padding: 0;
+}
+.header__item:last-child .header__link {
+  padding-right: 0;
 }
 .header__link {
   color: #000000;
@@ -110,34 +111,33 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   line-height: 23px;
   text-transform: uppercase;
+  padding: 15px 35px;
+  transition: 0.3s ease;
+}
+.header__link:hover {
+  color: #e63e00;
+  text-shadow: 4px -4px 2px rgba(0, 0, 0, 0.3);
 }
 .header__hamburger {
   display: none;
 }
 
-@media (max-width: 768px) {
-  .header__menu {
+@media (max-width: 992px) {
+  .header__link {
+    padding: 15px;
     font-size: 18px;
-    line-height: 21px;
-  }
-  .header__list li {
-    margin: 0 30px 0 0;
-  }
-  .header__list li:last-child {
-    margin: 0;
+    line-height: 20px;
   }
 }
-@media (max-width: 568px) {
-  .header {
-    /*&::before {
-    	content: "";
-    	position: absolute;
-    	width: 100%;
-    	height: 100%;
-    	top: 0;
-    	left: 0;
-    	background-color: #fff;
-    }*/
+@media (max-width: 767px) {
+  .header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
   }
   .header__row {
     position: relative;
@@ -163,6 +163,9 @@ h1, h2, h3, h4, h5, h6 {
   .header__item {
     display: block;
   }
+  .header__item:last-child .header__link {
+    padding-right: 15px;
+  }
   .header__link {
     font-weight: 700;
     font-size: 25px;
@@ -175,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* ------------------ */
 /* Hamburger */
-@media (max-width: 568px) {
+@media (max-width: 767px) {
   .hamburger {
     position: relative;
     width: 19px;
@@ -219,8 +222,30 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 /* ------------------ */
+/* Usability */
+.btn {
+  width: 203px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #e63e00;
+  border-radius: 3px;
+  transition: background-color 0.2s ease-in;
+}
+.btn:hover {
+  background-color: #c33500;
+}
+
+/* ------------------ */
 body {
   font-family: "Ubuntu";
+}
+
+.lock {
+  overflow: hidden;
 }
 
 .container {
@@ -234,45 +259,77 @@ body {
     max-width: 100%;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 320px) {
   .container {
     max-width: none;
+    padding: 0 12px;
   }
 }
 .page {
   padding: 100px 0 0 0;
 }
 
-.primary {
-  display: none;
-}
 .primary__row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-.primary__caption {
-  margin: 0 220px 0 0;
 }
 .primary__text {
   font-weight: 500;
   font-size: 36px;
   line-height: 41px;
   text-transform: uppercase;
-  margin: 0 0 40px 0;
 }
-.primary__button {
-  width: 203px;
-  height: 50px;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  color: #ffffff;
-  text-transform: uppercase;
-  background: #e63e00;
-  border-radius: 3px;
+.primary__btn {
+  margin: 40px 0 0 0;
 }
 .primary__img {
   flex: 1 1 390px;
   text-align: right;
 }
+.primary__img_mobile {
+  display: none;
+}
+
+/* Media */
+@media (max-width: 768px) {
+  .primary__caption {
+    margin: 0;
+  }
+  .primary__text {
+    font-size: 24px;
+    line-height: 27.5px;
+  }
+  .primary__btn {
+    margin: 100px 0 0 0;
+  }
+}
+@media (max-width: 640px) {
+  .primary__text {
+    font-size: 24px;
+    line-height: 27.5px;
+    text-align: left;
+  }
+}
+@media (max-width: 320px) {
+  .primary__row {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: right;
+  }
+  .primary__text {
+    font-size: 18px;
+    line-height: 20.5px;
+    text-align: left;
+  }
+  .primary__btn {
+    margin: 0;
+  }
+  .primary__img {
+    display: none;
+  }
+  .primary__img_mobile {
+    display: block;
+  }
+}
+/* ------------------ */
