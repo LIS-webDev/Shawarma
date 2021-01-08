@@ -1,0 +1,17 @@
+// Button
+.btn {
+	width: 203px;
+	height: 50px;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #e63e00;
+	border-radius: 3px;
+	transition: background-color 0.2s ease-in;
+
+	&:hover {
+		background-color: #c33500;
+	}
+}
