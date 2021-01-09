@@ -42,7 +42,7 @@ body {
 @media (max-width: 320px) {
 	.container {
 		max-width: none;
-		padding: 0 12px;
+		padding: 0 20px;
 	}
 }
 
@@ -75,6 +75,68 @@ body {
 	&__img {
 		flex: 1 1 390px;
 		text-align: right;
+	}
+	&__img_mobile {
+		display: none;
+	}
+}
+
+.why {
+	padding: 35px 0 70px 0;
+	&__title {
+		text-align: center;
+		margin: 0 0 70px 0;
+	}
+
+	&__body {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__img {
+		margin: 0 20px 0 0;
+	}
+
+	&__list {
+	}
+}
+
+.title {
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 41px;
+	text-transform: uppercase;
+}
+
+.list {
+	& ol {
+		counter-reset: my-counter;
+		list-style-type: none;
+	}
+	& li {
+		position: relative;
+		display: block;
+		margin: 0 0 40px 0;
+		&::before {
+			position: absolute;
+			display: inline-block;
+			content: counter(my-counter);
+			counter-increment: my-counter; /* Увеличиваем значение счётчика */
+			//background: #809778; /* Цвет фона */
+			font-weight: 500;
+			font-size: 32px;
+			line-height: 36px;
+			color: #e63e00; /* Белый цвет текста */
+		}
+	}
+	&__item {
+		& p {
+			display: inline-block;
+			padding: 0 0 0 67px;
+		}
+		font-size: 32px;
+		line-height: 37px;
+		letter-spacing: -0.2px;
 	}
 	&__img_mobile {
 		display: none;
