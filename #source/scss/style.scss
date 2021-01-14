@@ -23,6 +23,10 @@ body {
 	font-family: "Ubuntu";
 }
 
+.wrapper {
+	overflow: hidden;
+}
+
 .lock {
 	overflow: hidden;
 }
@@ -31,6 +35,7 @@ body {
 	max-width: 1200px;
 	padding: 0 20px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -86,6 +91,10 @@ body {
 	&__title {
 		text-align: center;
 		margin: 0 0 70px 0;
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 41px;
+		text-transform: uppercase;
 	}
 
 	&__body {
@@ -103,9 +112,18 @@ body {
 
 .title {
 	font-weight: 500;
-	font-size: 36px;
-	line-height: 41px;
+	font-size: 26px;
+	line-height: 30px;
 	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	&::before {
+		content: "";
+		width: 5px;
+		height: 50px;
+		background: #e63e00;
+		margin: 0 20px 0 0;
+	}
 }
 
 .list {
@@ -140,6 +158,133 @@ body {
 	}
 	&__img_mobile {
 		display: none;
+	}
+}
+
+.catalog {
+	padding: 0 0 40px 0;
+	&__title {
+		margin: 0 0 40px 0;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: center;
+		margin: 0 -12.5px;
+	}
+
+	&__item {
+		flex: 0 1 33.333%;
+		padding: 0 12.5px;
+	}
+}
+
+.item-catalog {
+	&__row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__img {
+		margin: 0 0 25px 0;
+	}
+	&__text {
+	}
+	&__name {
+		font-size: 30px;
+		line-height: 34px;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0 0 14px 0;
+	}
+
+	&__descrition {
+		font-size: 18px;
+		line-height: 21px;
+		letter-spacing: -0.5px;
+		color: #9c9c9c;
+		word-wrap: break-word;
+		margin: 0 0 20px 0;
+	}
+
+	&__buy {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__cost {
+		margin: 0 0 0 34px;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 28px;
+		text-transform: uppercase;
+	}
+
+	&__btn {
+	}
+}
+
+.form-order {
+	&__content {
+		position: relative;
+		padding: 40px 20px 30px 20px;
+		text-align: right;
+	}
+	&__img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	&__form {
+		max-width: 500px;
+		display: inline-block;
+		position: relative;
+		z-index: 2;
+		text-align: right;
+	}
+
+	&__title {
+		text-align: center;
+		font-size: 36px;
+		line-height: 41px;
+		color: #ffffff;
+		margin: 0 0 20px 0;
+	}
+
+	&__input-row {
+		margin: 0 0 50px 0;
+		& label {
+			font-size: 30px;
+			line-height: 34px;
+			color: #ffffff;
+			margin: 0 20px 0 0;
+		}
+		& input {
+			background: transparent;
+			width: 350px;
+			border-bottom: 2px solid #ffffff;
+			font-size: 30px;
+			line-height: 34px;
+		}
+	}
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__info {
+		flex: 0 1 201px;
+		text-align: left;
+		color: #fff;
+		line-height: 16px;
+	}
+
+	&__btn {
 	}
 }
 
