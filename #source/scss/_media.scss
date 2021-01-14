@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 	.primary {
 		&__row {
 		}
@@ -41,8 +41,70 @@
 			font-size: 30px;
 			line-height: 34px;
 		}
+
+		& p {
+			display: inline-block;
+		}
+
 		&__img_mobile {
-			display: block;
+			display: inline-block;
+		}
+	}
+
+	.catalog {
+		&__title {
+			font-size: 28px;
+		}
+
+		&__row {
+			flex-wrap: wrap;
+		}
+
+		&__item {
+		}
+		&__item_1 {
+			//flex: 0 1 33%;
+		}
+		&__item_2 {
+			//flex: 0 1 33%;
+		}
+		&__item_3 {
+			//flex: 0 1 33%;
+			margin: 40px 0 0 0;
+		}
+	}
+
+	.item-catalog {
+		&__img {
+		}
+
+		&__name {
+		}
+
+		&__descrition {
+			font-size: 16px;
+			line-height: 18px;
+		}
+
+		&__buy {
+		}
+
+		&__cost {
+		}
+
+		&__btn {
+		}
+	}
+
+	.form-order {
+		.container {
+			padding: 0;
+		}
+		&__content {
+			text-align: center;
+		}
+
+		&__img {
 		}
 	}
 }
@@ -99,7 +161,7 @@
 	}
 }
 
-@media (max-width: 360px) {
+@media (max-width: 767px) {
 	.primary {
 		&__row {
 			flex-direction: column;
@@ -114,6 +176,7 @@
 			font-size: 18px;
 			line-height: 20.5px;
 			text-align: left;
+			font-weight: 700;
 		}
 
 		&__btn {
@@ -151,6 +214,112 @@
 		&__item {
 			font-size: 18px;
 			line-height: 20.5px;
+		}
+	}
+
+	.catalog {
+		&__title {
+			justify-content: center;
+			&::after,
+			&::before {
+				content: "";
+				width: 25px;
+				height: 3px;
+				background: #e63e00;
+				margin: 0 15px;
+			}
+		}
+		&__row {
+		}
+
+		&__item {
+			position: relative;
+			margin: 0 0 30px 0;
+		}
+	}
+
+	.item-catalog {
+		&__row {
+		}
+		&__img {
+			text-align: center;
+		}
+		&__text {
+		}
+		&__name {
+		}
+
+		&__descrition {
+			position: relative;
+			margin: 0 0 10px 0;
+			& p {
+			}
+		}
+
+		&__buy {
+			flex-direction: column;
+		}
+
+		&__cost {
+			margin: 0 0 30px 0;
+		}
+
+		&__btn {
+		}
+	}
+}
+
+@media (max-width: 568px) {
+	.form-order {
+		background: url("../img/bgs/bg-form_2.png") 0 0/100% 100% no-repeat;
+		&__content {
+			text-align: left;
+		}
+
+		&__img {
+			position: relative;
+		}
+
+		&__form {
+		}
+
+		&__title {
+			font-size: 26px;
+			line-height: 30px;
+			margin: 0 0 25px 0;
+		}
+
+		&__input-row {
+			text-align: left;
+			display: flex;
+			justify-content: space-between;
+			& label {
+				font-size: 18px;
+				line-height: 21px;
+			}
+			& input {
+				width: 190px;
+				font-size: 18px;
+				line-height: 21px;
+			}
+		}
+
+		&__footer {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__info {
+			text-align: center;
+			flex: 1 1 auto;
+			order: 2;
+		}
+
+		&__btn {
+			margin: 0 0 10px 0;
+			width: 100%;
+			order: 1;
 		}
 	}
 }
