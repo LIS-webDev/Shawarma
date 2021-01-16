@@ -5,6 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Shawarma</title>
 		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -207,9 +211,57 @@
 						</div>
 					</div>
 				</section>
+				<section class="clients">
+					<div class="container">
+						<div class="clients__content">
+							<div class="clients__title title">Наши клиенты</div>
+							<div class="clients__slider">
+								<div class="image-slider swiper-container">
+									<div class="image-slider__wrapper swiper-wrapper">
+										<div class="image-slider__slide swiper-slide">
+											<div class="image-slider__image">
+												<img src="img/photo-clients/01.png" alt="Client" />
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="image-slider__image">
+												<img src="img/photo-clients/02.png" alt="Client" />
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="image-slider__image">
+												<img src="img/photo-clients/03.png" alt="Client" />
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="image-slider__image">
+												<img src="img/photo-clients/04.png" alt="Client" />
+											</div>
+										</div>
+									</div>
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="map">
+					<div class="map__container">
+						<script
+							type="text/javascript"
+							charset="utf-8"
+							async
+							src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae8067936c5898c7680beb197bb26209f0dd7353402de5d9fea91458776582b40&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+						></script>
+					</div>
+				</section>
 			</main>
 			<!-- @import "footer.html" -->
 		</div>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/swiper.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
