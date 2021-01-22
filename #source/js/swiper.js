@@ -9,11 +9,11 @@ new Swiper('.image-slider', {
         enabled: true,
         padeUpDowm: true
     },
-    mousewheel: {
-        sensivity: 1,
-        eventsTarget: '.image-slider'
-    },
     autoHeight: true,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets'
+    },
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -26,10 +26,6 @@ new Swiper('.image-slider', {
             slidesPerView: 2,
             slidesPerGroup: 2,
             spaceBetween: 50,
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets'
-            }
         },
         568: {
             slidesPerView: 3,

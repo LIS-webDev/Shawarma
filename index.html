@@ -12,31 +12,33 @@
 	</head>
 	<body>
 		<div class="wrapper">
-<header class="header">
+<header id="header" class="header">
 	<div class="container">
 		<div class="header__row">
 			<div class="header__logo">
-				<picture>
-					<source
-						media="(max-width: 320px)"
-						srcset="img/logo/logo-shawarma-mobile.png"
-					/>
-					<img src="img/logo/logo-shawarma.png" alt="Shawarma" />
-				</picture>
+				<a href="#primary">
+					<picture>
+						<source
+							media="(max-width: 320px)"
+							srcset="img/logo/logo-shawarma-mobile.png"
+						/>
+						<img src="img/logo/logo-shawarma.png" alt="Shawarma" />
+					</picture>
+				</a>
 			</div>
 			<nav class="header__menu">
 				<ul class="header__list">
 					<li class="header__item">
-						<a href="#" class="header__link">Каталог</a>
+						<a href="#catalog" class="header__link">Каталог</a>
 					</li>
 					<li class="header__item">
-						<a href="#" class="header__link">Заказать</a>
+						<a href="#form-order" class="header__link">Заказать</a>
 					</li>
 					<li class="header__item">
-						<a href="#" class="header__link">Клиенты</a>
+						<a href="#clients" class="header__link">Клиенты</a>
 					</li>
 					<li class="header__item">
-						<a href="#" class="header__link">О нас</a>
+						<a href="#footer" class="header__link">О нас</a>
 					</li>
 				</ul>
 			</nav>
@@ -45,7 +47,7 @@
 	</div>
 </header>
 			<main class="page">
-				<section class="primary">
+				<section id="primary" class="primary">
 					<div class="container">
 						<div class="primary__row">
 							<div class="primary__caption">
@@ -57,7 +59,9 @@
 								<div class="primary__img primary__img_mobile">
 									<img src="img/person-shawarma-mobile.png" alt="" />
 								</div>
-								<button class="primary__btn btn">Проверить</button>
+								<a href="#form-order" class="btnToForm">
+									<button class="primary__btn btn">Проверить</button>
+								</a>
 							</div>
 							<div class="primary__img">
 								<picture>
@@ -70,7 +74,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="why">
+				<section id="why" class="why">
 					<div class="container">
 						<div class="why__title">Почему мы?</div>
 						<div class="why__body">
@@ -105,115 +109,126 @@
 						</div>
 					</div>
 				</section>
-				<section class="catalog">
+				<section id="catalog" class="catalog">
 					<div class="container">
 						<div class="catalog__body">
 							<div class="catalog__title title">Каталог</div>
 							<div class="catalog__row">
-								<div class="catalog__item catalog__item_1 item-catalog">
-									<div class="item-catalog__row">
-										<div class="item-catalog__img">
-											<picture>
-												<source
-													media="(max-width: 767px)"
-													srcset="img/items/mobile/class.png" />
-												<source
-													media="(max-width: 991px)"
-													srcset="img/items/tablet/class.png" />
-												<img src="img/items/class.png" alt="Classic"
-											/></picture>
-										</div>
-										<div class="item-catalog__text">
-											<div class="item-catalog__name">Классическая</div>
-											<div class="item-catalog__descrition">
-												<p>
-													Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением
-													фирменных специй, спелые томаты, свежие огурцы,
-													хрустящий салат, маринованный красный лук, свежая
-													зелень, маринованные огурцы и&nbsp;все это завернуто
-													в&nbsp;свежеиспеченный лаваш с&nbsp;двумя авторскими
-													соусами
-												</p>
-											</div>
-										</div>
-										<div class="item-catalog__buy">
-											<div class="item-catalog__cost">От 180</div>
-											<button class="item-catalog__btn btn">ЗАКАЗАТЬ</button>
+								<div
+									class="catalog__item catalog__item_1 item-catalog item-catalog__row"
+								>
+									<div class="item-catalog__img">
+										<picture>
+											<source
+												media="(max-width: 767px)"
+												srcset="img/items/mobile/class.png" />
+											<source
+												media="(max-width: 991px)"
+												srcset="img/items/tablet/class.png" />
+											<img src="img/items/class.png" alt="Classic"
+										/></picture>
+									</div>
+									<div class="item-catalog__text">
+										<div class="item-catalog__name">Классическая</div>
+										<div class="item-catalog__descrition">
+											<p>
+												Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением
+												фирменных специй, спелые томаты, свежие огурцы,
+												хрустящий салат, маринованный красный лук, свежая
+												зелень, маринованные огурцы и&nbsp;все это завернуто
+												в&nbsp;свежеиспеченный лаваш с&nbsp;двумя авторскими
+												соусами
+											</p>
 										</div>
 									</div>
-								</div>
-								<div class="catalog__item catalog__item_2 item-catalog">
-									<div class="item-catalog__row">
-										<div class="item-catalog__img">
-											<picture>
-												<source
-													media="(max-width: 767px)"
-													srcset="img/items/mobile/brand.png"
-												/>
-												<source
-													media="(max-width: 991px)"
-													srcset="img/items/tablet/brand.png"
-												/>
-												<img src="img/items/brand.png" alt="Brand" />
-											</picture>
-										</div>
-										<div class="item-catalog__text">
-											<div class="item-catalog__name">Фирменная</div>
-											<div class="item-catalog__descrition">
-												<p>
-													Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением
-													фирменных специй, спелые томаты, свежие огурцы,
-													хрустящий салат, маринованные огурцы
-													с&nbsp;добавлением острых перчиков халапеньо
-													и&nbsp;картофеля пай и&nbsp;все это завернуто
-													в&nbsp;свежеиспеченный лаваш с&nbsp;двумя авторскими
-													соусами
-												</p>
-											</div>
-										</div>
-										<div class="item-catalog__buy">
-											<div class="item-catalog__cost">От 240</div>
-											<button class="item-catalog__btn btn">ЗАКАЗАТЬ</button>
-										</div>
+									<div class="item-catalog__buy">
+										<div class="item-catalog__cost">От 180</div>
+										<a href="#form-order" class="btnToForm"
+											><button class="item-catalog__btn btn">
+												ЗАКАЗАТЬ
+											</button></a
+										>
 									</div>
 								</div>
-								<div class="catalog__item catalog__item_3 item-catalog">
-									<div class="item-catalog__row">
-										<div class="item-catalog__img">
-											<picture>
-												<source
-													media="(max-width: 767px)"
-													srcset="img/items/mobile/mexican.png" />
-												<source
-													media="(max-width: 991px)"
-													srcset="img/items/tablet/mexican.png" />
-												<img src="img/items/mexican.png" alt="Mexican"
-											/></picture>
+								<div
+									class="catalog__item catalog__item_2 item-catalog item-catalog__row"
+								>
+									<div class="item-catalog__img">
+										<picture>
+											<source
+												media="(max-width: 767px)"
+												srcset="img/items/mobile/brand.png"
+											/>
+											<source
+												media="(max-width: 991px)"
+												srcset="img/items/tablet/brand.png"
+											/>
+											<img src="img/items/brand.png" alt="Brand" />
+										</picture>
+									</div>
+									<div class="item-catalog__text">
+										<div class="item-catalog__name">Фирменная</div>
+										<div class="item-catalog__descrition">
+											<p>
+												Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением
+												фирменных специй, спелые томаты, свежие огурцы,
+												хрустящий салат, маринованные огурцы с&nbsp;добавлением
+												острых перчиков халапеньо и&nbsp;картофеля пай
+												и&nbsp;все это завернуто в&nbsp;свежеиспеченный лаваш
+												с&nbsp;двумя авторскими соусами
+											</p>
 										</div>
-										<div class="item-catalog__text">
-											<div class="item-catalog__name">Мексиканская</div>
-											<div class="item-catalog__descrition">
-												<p>
-													Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением
-													фирменных специй, спелые томаты, свежая зелень, сыр
-													моцарелла, сочные ломтики бекона с&nbsp;добавлением
-													острых перчиков халапеньо и&nbsp;все это завернуто
-													в&nbsp;свежеиспеченный лаваш с&nbsp;двумя авторскими
-													соусами
-												</p>
-											</div>
+									</div>
+									<div class="item-catalog__buy">
+										<div class="item-catalog__cost">От 240</div>
+										<a href="#form-order" class="btnToForm"
+											><button class="item-catalog__btn btn">
+												ЗАКАЗАТЬ
+											</button></a
+										>
+									</div>
+								</div>
+								<div
+									class="catalog__item catalog__item_3 item-catalog item-catalog__row"
+								>
+									<div class="item-catalog__img">
+										<picture>
+											<source
+												media="(max-width: 767px)"
+												srcset="img/items/mobile/mexican.png" />
+											<source
+												media="(max-width: 991px)"
+												srcset="img/items/tablet/mexican.png" />
+											<img src="img/items/mexican.png" alt="Mexican"
+										/></picture>
+									</div>
+									<div class="item-catalog__text">
+										<div class="item-catalog__name">Мексиканская</div>
+										<div class="item-catalog__descrition">
+											<p>
+												Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением
+												фирменных специй, спелые томаты, свежая зелень, сыр
+												моцарелла, сочные ломтики бекона с&nbsp;добавлением
+												острых перчиков халапеньо и&nbsp;все это завернуто
+												в&nbsp;свежеиспеченный лаваш с&nbsp;двумя авторскими
+												соусами
+											</p>
 										</div>
-										<div class="item-catalog__buy">
-											<div class="item-catalog__cost">От 210</div>
-											<button class="item-catalog__btn btn">ЗАКАЗАТЬ</button>
-										</div>
+									</div>
+									<div class="item-catalog__buy">
+										<div class="item-catalog__cost">От 210</div>
+										<a href="#form-order" class="btnToForm"
+											><button class="item-catalog__btn btn">
+												ЗАКАЗАТЬ
+											</button></a
+										>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="form-order">
+				<section id="form-order" class="form-order">
 					<div class="container">
 						<div class="form-order__content">
 							<div class="form-order__img ibg">
@@ -242,7 +257,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="clients">
+				<section id="clients" class="clients">
 					<div class="container">
 						<div class="clients__content">
 							<div class="clients__title title">Наши клиенты</div>
@@ -270,15 +285,19 @@
 											</div>
 										</div>
 									</div>
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev">
+										<img src="img/icons/arrow-left.png" alt="arrow-left" />
+									</div>
+									<div class="swiper-button-next">
+										<img src="img/icons/arrow-right.png" alt="arrow-right" />
+									</div>
 									<div class="swiper-pagination"></div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="map">
+				<section id="map" class="map">
 					<div class="map__container">
 						<script
 							type="text/javascript"
@@ -288,8 +307,65 @@
 						></script>
 					</div>
 				</section>
+<div class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__body">
+			<div class="popup__container">
+				<div class="popup__title title-popup">
+					ОСТАВЬТЕ ЗАЯВКУ. НАШ МЕНЕДЖЕР позвонит Вам в&nbsp;ТЕЧЕНИЕ 5&nbsp;МИНУТ
+				</div>
+				<form action="#" method="get" class="popup__form form-popup">
+					<div class="form-popup__rows">
+						<div class="form-popup__row">
+							<label for="shawarmaName" class="form-popup__name-input"
+								>Название</label
+							>
+							<input
+								tabindex="1"
+								class="form-popup__input"
+								type="text"
+								name="shawarmaName"
+							/>
+						</div>
+						<div class="form-popup__row">
+							<label for="userName" class="form-popup__name-input">Имя</label>
+							<input
+								tabindex="2"
+								class="form-popup__input"
+								type="text"
+								name="userName"
+							/>
+						</div>
+						<div class="form-popup__row">
+							<label for="userPhone" class="form-popup__name-input"
+								>Телефон</label
+							>
+							<input
+								tabindex="3"
+								class="form-popup__input"
+								type="text"
+								name="userPhone"
+							/>
+						</div>
+					</div>
+					<div class="form-popup__submit">
+						<div class="form-popup__caption">
+							<p>
+								*Нажимая кнопку, я&nbsp;даю свое <br />
+								согласие на&nbsp;обработку <br />
+								персональных данных
+							</p>
+						</div>
+						<button class="form-popup__btn btn" type="submit">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="popup__close-btn"></div>
+	</div>
+</div>
 			</main>
-<footer class="footer">
+<footer id="footer" class="footer">
 	<div class="container">
 		<div class="footer__body">
 			<div class="footer__columns">
@@ -315,9 +391,12 @@
 				</div>
 				<div class="footer__column footer__column_3">
 					<div class="footer__icons">
-						<img src="img/icons/vk.png" alt="vk" />
-
-						<img src="img/icons/inst.png" alt="instagram" />
+						<a href="#" class="footer__icon-link"
+							><img src="img/icons/vk.png" alt="vk"
+						/></a>
+						<a href="#" class="footer__icon-link"
+							><img src="img/icons/inst.png" alt="instagram"
+						/></a>
 					</div>
 				</div>
 				<div class="footer__column footer__column_4">

@@ -14,7 +14,7 @@
 		<div class="wrapper">
 			<!-- @import "header.html" -->
 			<main class="page">
-				<section class="primary">
+				<section id="primary" class="primary">
 					<div class="container">
 						<div class="primary__row">
 							<div class="primary__caption">
@@ -26,7 +26,9 @@
 								<div class="primary__img primary__img_mobile">
 									<img src="img/person-shawarma-mobile.png" alt="" />
 								</div>
-								<button class="primary__btn btn">Проверить</button>
+								<a href="#form-order" class="btnToForm">
+									<button class="primary__btn btn">Проверить</button>
+								</a>
 							</div>
 							<div class="primary__img">
 								<picture>
@@ -39,7 +41,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="why">
+				<section id="why" class="why">
 					<div class="container">
 						<div class="why__title">Почему мы?</div>
 						<div class="why__body">
@@ -74,115 +76,126 @@
 						</div>
 					</div>
 				</section>
-				<section class="catalog">
+				<section id="catalog" class="catalog">
 					<div class="container">
 						<div class="catalog__body">
 							<div class="catalog__title title">Каталог</div>
 							<div class="catalog__row">
-								<div class="catalog__item catalog__item_1 item-catalog">
-									<div class="item-catalog__row">
-										<div class="item-catalog__img">
-											<picture>
-												<source
-													media="(max-width: 767px)"
-													srcset="img/items/mobile/class.png" />
-												<source
-													media="(max-width: 991px)"
-													srcset="img/items/tablet/class.png" />
-												<img src="img/items/class.png" alt="Classic"
-											/></picture>
-										</div>
-										<div class="item-catalog__text">
-											<div class="item-catalog__name">Классическая</div>
-											<div class="item-catalog__descrition">
-												<p>
-													Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением
-													фирменных специй, спелые томаты, свежие огурцы,
-													хрустящий салат, маринованный красный лук, свежая
-													зелень, маринованные огурцы и&nbsp;все это завернуто
-													в&nbsp;свежеиспеченный лаваш с&nbsp;двумя авторскими
-													соусами
-												</p>
-											</div>
-										</div>
-										<div class="item-catalog__buy">
-											<div class="item-catalog__cost">От 180</div>
-											<button class="item-catalog__btn btn">ЗАКАЗАТЬ</button>
+								<div
+									class="catalog__item catalog__item_1 item-catalog item-catalog__row"
+								>
+									<div class="item-catalog__img">
+										<picture>
+											<source
+												media="(max-width: 767px)"
+												srcset="img/items/mobile/class.png" />
+											<source
+												media="(max-width: 991px)"
+												srcset="img/items/tablet/class.png" />
+											<img src="img/items/class.png" alt="Classic"
+										/></picture>
+									</div>
+									<div class="item-catalog__text">
+										<div class="item-catalog__name">Классическая</div>
+										<div class="item-catalog__descrition">
+											<p>
+												Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением
+												фирменных специй, спелые томаты, свежие огурцы,
+												хрустящий салат, маринованный красный лук, свежая
+												зелень, маринованные огурцы и&nbsp;все это завернуто
+												в&nbsp;свежеиспеченный лаваш с&nbsp;двумя авторскими
+												соусами
+											</p>
 										</div>
 									</div>
-								</div>
-								<div class="catalog__item catalog__item_2 item-catalog">
-									<div class="item-catalog__row">
-										<div class="item-catalog__img">
-											<picture>
-												<source
-													media="(max-width: 767px)"
-													srcset="img/items/mobile/brand.png"
-												/>
-												<source
-													media="(max-width: 991px)"
-													srcset="img/items/tablet/brand.png"
-												/>
-												<img src="img/items/brand.png" alt="Brand" />
-											</picture>
-										</div>
-										<div class="item-catalog__text">
-											<div class="item-catalog__name">Фирменная</div>
-											<div class="item-catalog__descrition">
-												<p>
-													Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением
-													фирменных специй, спелые томаты, свежие огурцы,
-													хрустящий салат, маринованные огурцы
-													с&nbsp;добавлением острых перчиков халапеньо
-													и&nbsp;картофеля пай и&nbsp;все это завернуто
-													в&nbsp;свежеиспеченный лаваш с&nbsp;двумя авторскими
-													соусами
-												</p>
-											</div>
-										</div>
-										<div class="item-catalog__buy">
-											<div class="item-catalog__cost">От 240</div>
-											<button class="item-catalog__btn btn">ЗАКАЗАТЬ</button>
-										</div>
+									<div class="item-catalog__buy">
+										<div class="item-catalog__cost">От 180</div>
+										<a href="#form-order" class="btnToForm"
+											><button class="item-catalog__btn btn">
+												ЗАКАЗАТЬ
+											</button></a
+										>
 									</div>
 								</div>
-								<div class="catalog__item catalog__item_3 item-catalog">
-									<div class="item-catalog__row">
-										<div class="item-catalog__img">
-											<picture>
-												<source
-													media="(max-width: 767px)"
-													srcset="img/items/mobile/mexican.png" />
-												<source
-													media="(max-width: 991px)"
-													srcset="img/items/tablet/mexican.png" />
-												<img src="img/items/mexican.png" alt="Mexican"
-											/></picture>
+								<div
+									class="catalog__item catalog__item_2 item-catalog item-catalog__row"
+								>
+									<div class="item-catalog__img">
+										<picture>
+											<source
+												media="(max-width: 767px)"
+												srcset="img/items/mobile/brand.png"
+											/>
+											<source
+												media="(max-width: 991px)"
+												srcset="img/items/tablet/brand.png"
+											/>
+											<img src="img/items/brand.png" alt="Brand" />
+										</picture>
+									</div>
+									<div class="item-catalog__text">
+										<div class="item-catalog__name">Фирменная</div>
+										<div class="item-catalog__descrition">
+											<p>
+												Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением
+												фирменных специй, спелые томаты, свежие огурцы,
+												хрустящий салат, маринованные огурцы с&nbsp;добавлением
+												острых перчиков халапеньо и&nbsp;картофеля пай
+												и&nbsp;все это завернуто в&nbsp;свежеиспеченный лаваш
+												с&nbsp;двумя авторскими соусами
+											</p>
 										</div>
-										<div class="item-catalog__text">
-											<div class="item-catalog__name">Мексиканская</div>
-											<div class="item-catalog__descrition">
-												<p>
-													Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением
-													фирменных специй, спелые томаты, свежая зелень, сыр
-													моцарелла, сочные ломтики бекона с&nbsp;добавлением
-													острых перчиков халапеньо и&nbsp;все это завернуто
-													в&nbsp;свежеиспеченный лаваш с&nbsp;двумя авторскими
-													соусами
-												</p>
-											</div>
+									</div>
+									<div class="item-catalog__buy">
+										<div class="item-catalog__cost">От 240</div>
+										<a href="#form-order" class="btnToForm"
+											><button class="item-catalog__btn btn">
+												ЗАКАЗАТЬ
+											</button></a
+										>
+									</div>
+								</div>
+								<div
+									class="catalog__item catalog__item_3 item-catalog item-catalog__row"
+								>
+									<div class="item-catalog__img">
+										<picture>
+											<source
+												media="(max-width: 767px)"
+												srcset="img/items/mobile/mexican.png" />
+											<source
+												media="(max-width: 991px)"
+												srcset="img/items/tablet/mexican.png" />
+											<img src="img/items/mexican.png" alt="Mexican"
+										/></picture>
+									</div>
+									<div class="item-catalog__text">
+										<div class="item-catalog__name">Мексиканская</div>
+										<div class="item-catalog__descrition">
+											<p>
+												Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением
+												фирменных специй, спелые томаты, свежая зелень, сыр
+												моцарелла, сочные ломтики бекона с&nbsp;добавлением
+												острых перчиков халапеньо и&nbsp;все это завернуто
+												в&nbsp;свежеиспеченный лаваш с&nbsp;двумя авторскими
+												соусами
+											</p>
 										</div>
-										<div class="item-catalog__buy">
-											<div class="item-catalog__cost">От 210</div>
-											<button class="item-catalog__btn btn">ЗАКАЗАТЬ</button>
-										</div>
+									</div>
+									<div class="item-catalog__buy">
+										<div class="item-catalog__cost">От 210</div>
+										<a href="#form-order" class="btnToForm"
+											><button class="item-catalog__btn btn">
+												ЗАКАЗАТЬ
+											</button></a
+										>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="form-order">
+				<section id="form-order" class="form-order">
 					<div class="container">
 						<div class="form-order__content">
 							<div class="form-order__img ibg">
@@ -211,7 +224,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="clients">
+				<section id="clients" class="clients">
 					<div class="container">
 						<div class="clients__content">
 							<div class="clients__title title">Наши клиенты</div>
@@ -239,15 +252,19 @@
 											</div>
 										</div>
 									</div>
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev">
+										<img src="img/icons/arrow-left.png" alt="arrow-left" />
+									</div>
+									<div class="swiper-button-next">
+										<img src="img/icons/arrow-right.png" alt="arrow-right" />
+									</div>
 									<div class="swiper-pagination"></div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="map">
+				<section id="map" class="map">
 					<div class="map__container">
 						<script
 							type="text/javascript"
@@ -257,6 +274,7 @@
 						></script>
 					</div>
 				</section>
+				<!-- @import "popup.html" -->
 			</main>
 			<!-- @import "footer.html" -->
 		</div>
