@@ -4,47 +4,53 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Shawarma</title>
-		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="shortcut icon"
+			href="img/icons/favicon/favicon.ico"
+			type="image/x-icon"
+		/>
 		<link
 			rel="stylesheet"
 			href="https://unpkg.com/swiper/swiper-bundle.min.css"
 		/>
+		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
 		<div class="wrapper">
-<header id="header" class="header">
-	<div class="container">
-		<div class="header__row">
-			<a href="#primary" class="header__logo">
-				<picture>
-					<source
-						media="(max-width: 320px)"
-						srcset="img/logo/logo-shawarma-mobile.png"
-					/>
-					<img src="img/logo/logo-shawarma.png" alt="Shawarma" />
-				</picture>
-			</a>
-
-			<nav class="header__menu">
-				<ul class="header__list">
-					<li class="header__item">
-						<a href="#catalog" class="header__link">Каталог</a>
-					</li>
-					<li class="header__item">
-						<a href="#form-order" class="header__link">Заказать</a>
-					</li>
-					<li class="header__item">
-						<a href="#clients" class="header__link">Клиенты</a>
-					</li>
-					<li class="header__item">
-						<a href="#footer" class="header__link">О нас</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="header__hamburger hamburger"><span></span></div>
-		</div>
-	</div>
-</header>
+			<header id="header" class="header">
+				<div class="container">
+					<div class="header__row">
+						<div class="header__logo">
+							<a href="#primary">
+								<picture>
+									<source
+										media="(max-width: 320px)"
+										srcset="img/logo/logo-shawarma-mobile.png"
+									/>
+									<img src="img/logo/logo-shawarma.png" alt="Shawarma" />
+								</picture>
+							</a>
+						</div>
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li class="header__item">
+									<a href="#catalog" class="header__link">Каталог</a>
+								</li>
+								<li class="header__item">
+									<a href="#form-order" class="header__link">Заказать</a>
+								</li>
+								<li class="header__item">
+									<a href="#clients" class="header__link">Клиенты</a>
+								</li>
+								<li class="header__item">
+									<a href="#footer" class="header__link">О нас</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="header__hamburger hamburger"><span></span></div>
+					</div>
+				</div>
+			</header>
 			<main class="page">
 				<section id="primary" class="primary">
 					<div class="container">
@@ -306,109 +312,114 @@
 						></script>
 					</div>
 				</section>
-<div class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__body">
-			<div class="popup__container">
-				<div class="popup__title title-popup">
-					ОСТАВЬТЕ ЗАЯВКУ. НАШ МЕНЕДЖЕР позвонит Вам в&nbsp;ТЕЧЕНИЕ 5&nbsp;МИНУТ
+				<div class="popup">
+					<div class="popup__wrapper">
+						<div class="popup__body">
+							<div class="popup__container">
+								<div class="popup__title title-popup">
+									ОСТАВЬТЕ ЗАЯВКУ. НАШ МЕНЕДЖЕР позвонит Вам в&nbsp;ТЕЧЕНИЕ
+									5&nbsp;МИНУТ
+								</div>
+								<form action="#" method="get" class="popup__form form-popup">
+									<div class="form-popup__rows">
+										<div class="form-popup__row">
+											<label for="shawarmaName" class="form-popup__name-input"
+												>Название</label
+											>
+											<input
+												tabindex="1"
+												class="form-popup__input"
+												type="text"
+												name="shawarmaName"
+											/>
+										</div>
+										<div class="form-popup__row">
+											<label for="userName" class="form-popup__name-input"
+												>Имя</label
+											>
+											<input
+												tabindex="2"
+												class="form-popup__input"
+												type="text"
+												name="userName"
+											/>
+										</div>
+										<div class="form-popup__row">
+											<label for="userPhone" class="form-popup__name-input"
+												>Телефон</label
+											>
+											<input
+												tabindex="3"
+												class="form-popup__input"
+												type="text"
+												name="userPhone"
+											/>
+										</div>
+									</div>
+									<div class="form-popup__submit">
+										<div class="form-popup__caption">
+											<p>
+												*Нажимая кнопку, я&nbsp;даю свое <br />
+												согласие на&nbsp;обработку <br />
+												персональных данных
+											</p>
+										</div>
+										<button class="form-popup__btn btn" type="submit">
+											Отправить
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="popup__close-btn"></div>
+					</div>
 				</div>
-				<form action="#" method="get" class="popup__form form-popup">
-					<div class="form-popup__rows">
-						<div class="form-popup__row">
-							<label for="shawarmaName" class="form-popup__name-input"
-								>Название</label
-							>
-							<input
-								tabindex="1"
-								class="form-popup__input"
-								type="text"
-								name="shawarmaName"
-							/>
-						</div>
-						<div class="form-popup__row">
-							<label for="userName" class="form-popup__name-input">Имя</label>
-							<input
-								tabindex="2"
-								class="form-popup__input"
-								type="text"
-								name="userName"
-							/>
-						</div>
-						<div class="form-popup__row">
-							<label for="userPhone" class="form-popup__name-input"
-								>Телефон</label
-							>
-							<input
-								tabindex="3"
-								class="form-popup__input"
-								type="text"
-								name="userPhone"
-							/>
-						</div>
-					</div>
-					<div class="form-popup__submit">
-						<div class="form-popup__caption">
-							<p>
-								*Нажимая кнопку, я&nbsp;даю свое <br />
-								согласие на&nbsp;обработку <br />
-								персональных данных
-							</p>
-						</div>
-						<button class="form-popup__btn btn" type="submit">Отправить</button>
-					</div>
-				</form>
-			</div>
-		</div>
-		<div class="popup__close-btn"></div>
-	</div>
-</div>
 			</main>
-<footer id="footer" class="footer">
-	<div class="container">
-		<div class="footer__body">
-			<div class="footer__columns">
-				<div class="footer__column footer__column_1">
-					<div class="footer__info">
-						<div class="footer__img">
-							<img src="img/logo/logo-shawarma.png" alt="logo" />
+			<footer id="footer" class="footer">
+				<div class="container">
+					<div class="footer__body">
+						<div class="footer__columns">
+							<div class="footer__column footer__column_1">
+								<div class="footer__info">
+									<div class="footer__img">
+										<img src="img/logo/logo-shawarma.png" alt="logo" />
+									</div>
+									<div class="footer__date">© 2009-2020</div>
+									<div class="footer__rules">
+										Политика конфиденциальности <br />
+										Копирование материалов запрещено
+									</div>
+								</div>
+							</div>
+							<div class="footer__column footer__column_2">
+								<div class="footer__navigation">
+									<a href="#">Каталог</a>
+									<a href="#">Заказать</a>
+									<a href="#">Клиенты</a>
+									<a href="#">О нас</a>
+								</div>
+							</div>
+							<div class="footer__column footer__column_3">
+								<div class="footer__icons">
+									<a href="#" class="footer__icon-link"
+										><img src="img/icons/vk.png" alt="vk"
+									/></a>
+									<a href="#" class="footer__icon-link"
+										><img src="img/icons/inst.png" alt="instagram"
+									/></a>
+								</div>
+							</div>
+							<div class="footer__column footer__column_4">
+								<div class="footer__contacts">
+									<div class="footer__phone">8 (999) 444-33-22</div>
+									<div class="footer__address">Челябинск, ул. Ленина, д.11</div>
+									<div class="footer__email">shawarma@yandex.ru</div>
+								</div>
+							</div>
 						</div>
-						<div class="footer__date">© 2009-2020</div>
-						<div class="footer__rules">
-							Политика конфиденциальности <br />
-							Копирование материалов запрещено
-						</div>
 					</div>
 				</div>
-				<div class="footer__column footer__column_2">
-					<div class="footer__navigation">
-						<p>Каталог</p>
-						<p>Заказать</p>
-						<p>Клиенты</p>
-						<p>О нас</p>
-					</div>
-				</div>
-				<div class="footer__column footer__column_3">
-					<div class="footer__icons">
-						<a href="#" class="footer__icon-link"
-							><img src="img/icons/vk.png" alt="vk"
-						/></a>
-						<a href="#" class="footer__icon-link"
-							><img src="img/icons/inst.png" alt="instagram"
-						/></a>
-					</div>
-				</div>
-				<div class="footer__column footer__column_4">
-					<div class="footer__contacts">
-						<div class="footer__phone">8 (999) 444-33-22</div>
-						<div class="footer__address">Челябинск, ул. Ленина, д.11</div>
-						<div class="footer__email">shawarma@yandex.ru</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
+			</footer>
 		</div>
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<script src="js/swiper.js"></script>
